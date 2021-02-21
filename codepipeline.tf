@@ -66,10 +66,10 @@ resource "aws_codepipeline" "codepipeline" {
     }
   }
   
-  resource "aws_codestarconnections_connection" "example" {
-    name          = "toy_flask_github_connection"
-    provider_type = "GitHub"
-  }
+  #resource "aws_codestarconnections_connection" "example" {
+  #  name          = "toy_flask_github_connection"
+  #  provider_type = "GitHub"
+  #}
 
   resource "aws_s3_bucket" "codepipeline_bucket" {
     bucket = var.bucket_name
