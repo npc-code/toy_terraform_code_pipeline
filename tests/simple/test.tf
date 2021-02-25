@@ -9,7 +9,6 @@ module "under_test" {
   cluster_name = "under_test-cluster"
   repository_url = "under_test"
   container_name     = "under_test-container"
-  subnet_ids = ["test1", "test2"]
   vpc_id = "test1"
   app_repository_name = "test_repo_name"
   app_service_name = "test-cluster"
