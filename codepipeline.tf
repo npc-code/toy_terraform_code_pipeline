@@ -67,7 +67,8 @@ resource "aws_codepipeline" "codepipeline" {
   }
   
   resource "aws_s3_bucket" "codepipeline_bucket" {
-    bucket = var.bucket_name
+    #bucket = var.bucket_name
+    bucket_prefix = var.bucket_name
     acl    = "private"
     force_destroy = true
   }
